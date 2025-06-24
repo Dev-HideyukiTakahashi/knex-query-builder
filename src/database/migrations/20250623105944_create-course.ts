@@ -3,7 +3,7 @@ import type { Knex } from 'knex';
 // Exemplo criando tabela curso
 
 export async function up(knex: Knex): Promise<void> {
-  await knex.schema.createTable('course', table => {
+  await knex.schema.createTable('courses', (table) => {
     // criando as colunas da tabela
     table.increments('id').primary(),
       table.text('name').notNullable(),

@@ -17,4 +17,12 @@ Exemplo utilizando no terminal
   - `npm run knex -- migrate:list`
 
 - Desfazendo migrations:
+
   - `npm run knex -- migrate:down 20250623111426_add-updated-courses.ts`
+
+- Criando seed:
+
+  - `npm run knex -- seed:make insert-courses`
+
+- Executando seed:
+  - `npm run knex -- seed:run`
